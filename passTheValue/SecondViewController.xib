@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="lab" destination="tgk-z6-NtL" id="ZrT-HR-OPY"/>
+                <outlet property="tf" destination="Z0C-LQ-wqQ" id="e6S-3z-GFy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z0C-LQ-wqQ">
+                    <rect key="frame" x="115" y="211" width="151" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wTW-m2-ad6"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgk-z6-NtL">
+                    <rect key="frame" x="121" y="271" width="145" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="JK5-qs-QaF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="104-Zb-RuH">
+                    <rect key="frame" x="115" y="145" width="131" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="b1B-Ei-Kuv"/>
+                    </constraints>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="i4a-0w-gHq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="104-Zb-RuH" secondAttribute="trailing" constant="129" id="Cuf-v7-2Sc"/>
+                <constraint firstItem="104-Zb-RuH" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="125" id="HAc-uX-jh5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Z0C-LQ-wqQ" secondAttribute="trailing" constant="109" id="Idr-dl-Tub"/>
+                <constraint firstItem="tgk-z6-NtL" firstAttribute="top" secondItem="Z0C-LQ-wqQ" secondAttribute="bottom" constant="30" id="P7p-7o-ebb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tgk-z6-NtL" secondAttribute="trailing" constant="109" id="Sds-Ku-fMn"/>
+                <constraint firstItem="Z0C-LQ-wqQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="115" id="gWt-H3-pPW"/>
+                <constraint firstItem="tgk-z6-NtL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="121" id="giv-kN-zFd"/>
+                <constraint firstItem="104-Zb-RuH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="115" id="ibJ-kV-Vn7"/>
+                <constraint firstItem="Z0C-LQ-wqQ" firstAttribute="top" secondItem="104-Zb-RuH" secondAttribute="bottom" constant="36" id="wpg-ct-W3O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="40.5" y="59.5"/>
+        </view>
+    </objects>
+</document>
